@@ -1,26 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
-    html, body{
-        height: 100%;}
-    
-header{
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
     display: flex;
     height: 5%;
-    background-color: rgb(37, 37, 37);
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-header a{
+header a {
+    text-shadow: 2px 2px 4px black;
+    font-weight: 800;
     font-family: 'Kanit', sans-serif;
     color: white;
     font-size: 19px;
     margin-left: 20px;
     text-decoration: none;
     opacity: 70%;
+}
+
+
+main img {
+    opacity: 65%;
+    height: 100vh;
+    width: 100%;
 }
