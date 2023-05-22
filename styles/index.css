@@ -4,28 +4,24 @@
     box-sizing: border-box;
 }
 
-body {
-    /* margin: 0; */
+.app {
+    background-image: linear-gradient(rgba(160, 225, 255, 0.2), rgba(160, 225, 255, 0.2)), url(../images/destopimg.jpg);
+    
+    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
     position: relative;
-    background: url(../images/destopimg.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
 }
 
+
+
 header {
-    background-color: yellow;
-    /* padding-top: 20px; */
-    /* position: fixed; */
-    top: 0;
-    left: 0;
+    padding-top: 20px;
     width: 100%;
-    /* z-index: 1; */
     display: flex;
     height: 5%;
     flex-direction: row;
@@ -41,7 +37,6 @@ header a {
     font-size: 19px;
     margin-left: 20px;
     text-decoration: none;
-    opacity: 70%;
     transition: .5s;
 }
 
@@ -50,14 +45,16 @@ header a:hover{
     text-shadow: 0 0 8px white;
 }
 .card1{
+    box-shadow: 4px 4px 10px black;
+    background-color: rgba(119, 119, 119, 0.500);
     width: 300px;
     height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: brown;
 }
+
 .card1 img{
     width: 50%;
     height: 35%;
@@ -71,13 +68,25 @@ h1{
 }
 
 .container{
-    background-color: blue;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .footer{
     background-color: blueviolet;
+}
+
+.text{
+    color:black;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    width: 700px;    
 }
