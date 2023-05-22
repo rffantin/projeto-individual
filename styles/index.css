@@ -5,8 +5,7 @@
 }
 
 .app {
-    background-image: linear-gradient(rgba(160, 225, 255, 0.2), rgba(160, 225, 255, 0.2)), url(../images/destopimg.jpg);
-    
+    background-color:black;
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -17,13 +16,11 @@
     height: 100vh;
 }
 
-
-
 header {
-    padding-top: 20px;
+    background-color: rgb(92, 49, 247);
     width: 100%;
     display: flex;
-    height: 5%;
+    height: 40px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -45,20 +42,30 @@ header a:hover{
     text-shadow: 0 0 8px white;
 }
 .card1{
-    box-shadow: 4px 4px 10px black;
-    background-color: rgba(119, 119, 119, 0.500);
+    box-shadow: 5px 5px 10px rgb(92, 49, 247);
+    background-image: url(../images/universe.jpg);
     width: 300px;
     height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .card1 img{
     width: 50%;
     height: 35%;
     border-radius: 50%;
+}
+
+.card1 p{
+    color: white;
+    padding: 3px;
+    border-left: 1px solid white; border-right: 1px solid white; border-bottom: 1px solid white; border-top: 1px solid white;
+}
+.card1 h1{
+    color: white;
 }
 
 h1{
@@ -68,7 +75,6 @@ h1{
 }
 
 .container{
-    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -80,9 +86,10 @@ h1{
 }
 
 .text{
-    color:black;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(197, 197, 197);
     font-weight: 600;
-    text-shadow: 2px 2px 3px white;
+    text-shadow: 2px 2px 3px black;
     font-size: 30px;
     display: flex;
     flex-direction: column;
