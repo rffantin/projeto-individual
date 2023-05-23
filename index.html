@@ -9,20 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
     <title>Rafael Fantin</title>
 </head>
 
 <body>
 <div class="app">
     <header>
-        <a class="selected" href="#">QUEM SOU EU</a>
-        <a href="#">HOBBIES</a>
-        <a href="#">CONTATO</a>
+        <a class="selected" href="#quemsou">QUEM SOU EU</a>
+        <a href="#hobbies">HOBBIES</a>
+        <a href="#contato">CONTATO</a>
     </header>
 
     <main class="container">
 
-        
+        <section class="quemsou" id="quemsou">
             <div class="card1">
                 <img src="./images/avatar.png" alt="minha foto">
                 <h1>Rafael Fantin</h1>
@@ -33,14 +36,45 @@
                 <p>Sou natural de União da Vitória-PR,<br> tenho 32 anos, curitibano há 30.</p>
                 <p>Apesar de não concluído, já cursei<br> Licenciatura em Música, pela UNESPAR (antiga FAP).</p>
                 <p>Atualmente estudo para ser um desenvolvedor web full stack.</p>
-
             </div>
-        
+        </section>
+
+        <section class="hobbies" id="hobbies">
+            <h2>Hobbies</h2>
+            <p>Como hobbies, gosto muito de jogos online, como League of Legends, Tibia e alguns de pokémon. Além disso, sempre gosto de jogar Zelda e a franquia Mario Bros no Nintendo Switch.</p>
+            <p>Pratico musculação 5 ou 6 vezes na semana e gosto bastante de pedalar.</p>
+            <p>Apesar de não ter concluído a faculdade de música, ainda tenho muita vontade de continuar praticando como hobbie, mas para isso, vai demandar um certo investimento.</p>
+            <p>Ouvir músicas e assistir séries também são uma boa pedida para o tempo ocioso.</p>
+        </section>
+
+        <section class="contato" id="contato">
+            <h2>Contato</h2>
+            <form>
+                <fieldset>
+                    <div>
+                        <label for="nome"> Nome Completo </label> <br>
+                        <input type="name" placeholder="Digite seu nome"> <br>
+                    </div>
+                    <div>
+                        <label for="e-mail"> E-mail</label> <br>
+                        <input type="e-mail" placeholder="Digite seu e-mail">
+                        
+                    </div>
+                    <div>
+                        <label for="text">Sua mensagem</label> <br>
+                        <input placeholder="Digite sua mensagem"> <br>
+                    </div>
+                    <div>
+                        <input type="submit">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
         
     </main>
 
     <footer class="footer">
-<p>Footer aqui</p>
+<p>Página feita por Rafael Fantin Camargo</p>
     </footer>
     </div>
 </body>

@@ -9,11 +9,10 @@
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+    /* justify-content: space-between;
+    position: relative; */
+    width: 100%;
+    height: 100%;
 }
 
 header {
@@ -22,6 +21,9 @@ header {
     display: flex;
     height: 40px;
     flex-direction: row;
+    z-index: 1;
+    position: fixed;
+    top: 0;
     justify-content: space-around;
     align-items: center;
 }
@@ -41,6 +43,14 @@ header a:hover{
     color: whitesmoke;
     text-shadow: 0 0 8px white;
 }
+.container{
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
 .card1{
     box-shadow: 5px 5px 10px rgb(92, 49, 247);
     background-image: url(../images/universe.jpg);
@@ -69,31 +79,114 @@ header a:hover{
 }
 
 h1{
+    
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
     padding: 20px;
 }
 
-.container{
+h2{
+    
+    width: fit-content;
+    background-color: white;
+}
+
+.text h2{
+    background-color: rgb(92, 49, 247);
+}
+
+.quemsou {
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
-.footer{
-    background-color: blueviolet;
-}
-
 .text{
-    font-family: 'Roboto', sans-serif;
-    color:rgb(197, 197, 197);
+    font-family: 'Space Mono', monospace;
+    color:rgb(219, 219, 219);
     font-weight: 600;
     text-shadow: 2px 2px 3px black;
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 400px;
     width: 700px;    
+}
+
+.hobbies{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Space Mono', monospace;
+    color:rgb(219, 219, 219);
+    font-weight: 600;
+    text-shadow: 2px 2px 3px black;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.hobbies p{
+    margin-top: 50px;
+}
+
+.hobbies h2{
+    /* margin-bottom: 100px; */
+    background-color: rgb(92, 49, 247);
+}
+
+
+.contato {
+    font-family: 'Space Mono', monospace;
+    color: white;
+    height: 100vh;
+    /* margin: 100px 0px 100px 0px; */
+    background-color:black;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 100px; */
+}
+
+.contato h2{
+    background-color: rgb(92, 49, 247);
+    text-shadow: 2px 2px 3px black;
+    font-size: 30px;
+}
+
+form input,
+form textarea {
+    outline: unset;
+    padding: 10px;
+    width: 300px;
+    color: black;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+form input[type=submit] {
+    cursor: pointer;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: rgb(92, 49, 247);
 }
