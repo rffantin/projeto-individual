@@ -4,9 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Estilização da main */
 .app {
-    background-color:black;
+    background-color: black;
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -14,6 +15,7 @@
     height: 100%;
     margin-top: 40px;
 }
+
 /* Estilização do header */
 header {
     background-color: rgb(92, 49, 247);
@@ -27,6 +29,7 @@ header {
     justify-content: space-around;
     align-items: center;
 }
+
 /* Estilização dos links do header */
 header a {
     text-shadow: 2px 2px 4px black;
@@ -38,13 +41,15 @@ header a {
     text-decoration: none;
     transition: .5s;
 }
+
 /* Aplicando hover no header */
-header a:hover{
+header a:hover {
     color: whitesmoke;
     text-shadow: 0 0 8px white;
 }
+
 /* Estilização do card */
-.card1{
+.card1 {
     box-shadow: 5px 5px 10px rgb(92, 49, 247);
     background-image: url(../images/universe.jpg);
     width: 300px;
@@ -55,37 +60,47 @@ header a:hover{
     justify-content: center;
     border-radius: 5px 5px 5px 5px;
 }
+
 /* Configurando a imagem contida no card */
-.card1 img{
+.card1 img {
     width: 62%;
     height: 55%;
     border-radius: 4px;
 }
+
 /* Estilizando o paragrafo do card */
-.card1 p{
+.card1 p {
     color: white;
     padding: 3px;
-    border-left: 1px solid white; border-right: 1px solid white; border-bottom: 1px solid white; border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
 }
+
 /* Estilizando o título 2 do card */
-.card1 h1{
+.card1 h1 {
     color: white;
 }
+
 /* Estilizando o título */
-h1{    
+h1 {
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
     padding: 20px;
 }
+
 /* Estilizando o título 2 */
-h2{
+h2 {
     width: fit-content;
     background-color: white;
 }
+
 /* Estilizando o fundo do texto do título 2 */
-.text h2{
+.text h2 {
     background-color: rgb(92, 49, 247);
 }
+
 /* Configurando a seção "Quem sou eu" */
 .quemsou {
     height: 100vh;
@@ -94,10 +109,11 @@ h2{
     align-items: center;
     justify-content: space-around;
 }
+
 /* Estilizando o texto da página "Quem sou eu" */
-.text{
+.text {
     font-family: 'Space Mono', monospace;
-    color:rgb(219, 219, 219);
+    color: rgb(219, 219, 219);
     font-weight: 600;
     text-shadow: 2px 2px 3px black;
     font-size: 25px;
@@ -105,14 +121,15 @@ h2{
     flex-direction: column;
     justify-content: space-around;
     height: 400px;
-    width: 700px;    
+    width: 700px;
 }
+
 /* Configurando a seção "Hobbies" */
-.hobbies{
+.hobbies {
     margin-left: 50px;
     margin-right: 50px;
     font-family: 'Space Mono', monospace;
-    color:rgb(219, 219, 219);
+    color: rgb(219, 219, 219);
     font-weight: 600;
     text-shadow: 2px 2px 3px black;
     font-size: 25px;
@@ -124,20 +141,23 @@ h2{
     height: 100vh;
     background-color: black;
 }
+
 /* Configurando a margem dos parágrados da página Hobbies */
-.hobbies p{
+.hobbies p {
     margin-top: 50px;
 }
+
 /* Aplicando cor de fundo no H2 de Hobbies */
-.hobbies h2{
+.hobbies h2 {
     background-color: rgb(92, 49, 247);
 }
+
 /* Configurando a seção de contato */
 .contato {
     font-family: 'Space Mono', monospace;
     color: white;
     height: 100vh;
-    background-color:black;
+    background-color: black;
     position: relative;
     text-align: center;
     display: flex;
@@ -145,12 +165,14 @@ h2{
     align-items: center;
     justify-content: space-around;
 }
+
 /* Estilizando o H2 de "Contato" */
-.contato h2{
+.contato h2 {
     background-color: rgb(92, 49, 247);
     text-shadow: 2px 2px 3px black;
     font-size: 30px;
 }
+
 /* Estilizando a forma dos inputs do contato */
 form input,
 form textarea {
@@ -169,8 +191,9 @@ form input[type=submit] {
 form div {
     margin-bottom: 20px;
 }
+
 /* Estilizando o rodapé */
-.footer{
+.footer {
     display: flex;
     flex-direction: row;
     align-items: center;
